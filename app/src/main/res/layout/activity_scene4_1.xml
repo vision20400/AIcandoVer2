@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scene4_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".view.scene4.Scene4_1">
+
+    <FrameLayout
+        android:id="@+id/topMenuFrame"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/scene4_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/radio4_1Group"
+        app:layout_constraintEnd_toStartOf="@+id/scene4_1_nbtn"
+        app:layout_constraintStart_toEndOf="@+id/scene4_1_pbtn"
+        app:layout_constraintTop_toBottomOf="@+id/topMenuFrame">
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radio4_1Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radio4_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/radio_youtube"
+            android:gravity="center"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/radio4_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/radio_quiz"
+            android:gravity="center"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+        <RadioButton
+            android:id="@+id/radio4_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/radio_plus"
+            android:gravity="center"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/scene4_1_nbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scene_4_1_r"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scene4_1_pbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scene_4_1_l"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

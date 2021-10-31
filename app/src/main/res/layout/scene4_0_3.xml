@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/border2_layout"
+    android:foreground="@drawable/border_layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FCF3EA"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:text="- 우리 생활 속 인공지능을 찾아볼까요?"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FCF3EA"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:text="- 강한 인공지능은 개발될 수 있을까요?"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FCF3EA"
+        android:fontFamily="@font/bmjua"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:text="- 빅데이터와 사물 인터넷이란 무엇일까요?"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/s5_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/pdf1" />
+
+        <ImageButton
+            android:id="@+id/s5_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/pdf2" />
+
+        <ImageButton
+            android:id="@+id/s5_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/pdf3" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.31484375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable-v24/radio_active.xml" value="0.31484375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable-v24/radio_plus1.xml" value="0.6296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border1_layout.xml" value="0.254296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border2_layout.xml" value="0.254296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border3_layout.xml" value="0.254296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border4_layout.xml" value="0.4197916666666667" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border5_layout.xml" value="0.6296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border6_layout.xml" value="0.4046875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border7_layout.xml" value="0.6296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border8_layout.xml" value="0.6296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border9_layout.xml" value="0.197265625" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/border_layout.xml" value="0.254296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/custom_checkbox.xml" value="0.6296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.31484375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/o_btn.xml" value="0.254296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/pick1.xml" value="0.6296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/drawable/x_btn.xml" value="0.254296875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/font/font.xml" value="0.325390625" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene4_1.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene4_intro.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene5_intro.xml" value="0.3192307692307692" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene6_intro.xml" value="0.3192307692307692" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene7_intro.xml" value="0.302734375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene8_intro.xml" value="0.246875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_scene9_intro.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/activity_splash2.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/fragment_top_menu.xml" value="0.302734375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/menu.xml" value="0.302734375" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/moral_dialog01.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/quiz_dialog01.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/quiz_dialog02.xml" value="0.23903508771929824" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/quiz_dialog03.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene4_0_1.xml" value="0.29433497536945813" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene4_0_2.xml" value="0.2" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene4_0_3.xml" value="0.4036458333333333" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene4_1_1.xml" value="0.23903508771929824" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene4_1_2.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene4_1_3.xml" value="0.23903508771929824" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene5_1_1.xml" value="0.264" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene5_2_1.xml" value="0.38046875" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene5_3_1.xml" value="0.3580097087378641" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene6_3_1.xml" value="0.4" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/AIcandoVer2/app/src/main/res/layout/scene6_3_2.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

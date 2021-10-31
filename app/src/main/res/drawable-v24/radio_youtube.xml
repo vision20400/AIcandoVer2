@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- selector가 눌렸을때 @drawable/button01_press 를 보여준다.-->
+    <item android:state_pressed="true" android:drawable="@drawable/radio_youtube_h"/>
+    <item android:state_checked="true" android:drawable="@drawable/radio_youtube_af"/>
+    <item android:state_checked="false" android:drawable="@drawable/radio_youtube_bf"/>
+</selector>
