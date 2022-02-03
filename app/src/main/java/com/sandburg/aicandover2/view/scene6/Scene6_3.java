@@ -44,8 +44,8 @@ public class Scene6_3 extends AppCompatActivity {
         RadioButton radioButton1 = (RadioButton) findViewById(R.id.radio4_1_1);
         RadioButton radioButton2 = (RadioButton) findViewById(R.id.radio4_1_2);
 
-        radioButton1.setButtonDrawable(R.drawable.radio_active);
-        radioButton2.setButtonDrawable(R.drawable.radio_plus1);
+        radioButton1.setBackgroundResource(R.drawable.radio_active);
+        radioButton2.setBackgroundResource(R.drawable.radio_plus1);
  
 
         //라디오 버튼 3번 삭제

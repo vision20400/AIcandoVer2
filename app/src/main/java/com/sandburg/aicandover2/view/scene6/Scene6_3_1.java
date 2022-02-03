@@ -1,6 +1,7 @@
 package com.sandburg.aicandover2.view.scene6;
 
 import android.app.Dialog;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.sandburg.aicandover2.R;
 public class Scene6_3_1 extends Fragment {
     Dialog moral_dialog01; // 커스텀 다이얼로그1
     Dialog moral_dialog02; // 커스텀 다이얼로그2
+    MediaPlayer pick_sound; //효과음
 
     int img_check1=0;
     int img_check2=0;
@@ -116,6 +118,8 @@ public class Scene6_3_1 extends Fragment {
         result6_2 = v.findViewById(R.id.result6_2);
         scene6_result = v.findViewById(R.id.scene6_result);
         help = v.findViewById(R.id.help);
+
+        pick_sound = MediaPlayer.create(getContext(), R.raw.pick_sound);
 
         //result = new ImageView[]{result1, result2, result3, result4, result5, result6};
         result1 = new CheckBox[]{result1_1, result2_1, result3_1, result4_1, result5_1, result6_1};
@@ -258,6 +262,7 @@ public class Scene6_3_1 extends Fragment {
 
         @Override
         public void onClick(View v) {
+            pick_sound.start();
             switch (v.getId ()){
                 case R.id.pick1:
                     for(int i=0; i<6;i++){

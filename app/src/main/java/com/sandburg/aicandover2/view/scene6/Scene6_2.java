@@ -42,7 +42,7 @@ public class Scene6_2 extends AppCompatActivity {
         radio4_1Group.check(R.id.radio4_1_1);
 
         RadioButton radioButton1 = (RadioButton) findViewById(R.id.radio4_1_3);
-        radioButton1.setButtonDrawable(R.drawable.radio_plus1);
+        radioButton1.setBackgroundResource(R.drawable.radio_plus1);
 
         //버튼 세팅
         changeButton(scene4_1_pbtn,scene4_1_nbtn,1,radio4_1Group);

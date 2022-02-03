@@ -1,7 +1,7 @@
 package com.sandburg.aicandover2;
 
 public class publicData {
-    /*public String[][] boxItemStrList = {
+    public String[][] boxItemStrList = {
             {"사람" , "인공지능"} ,
             {"사라질 것 같아요!" , "사라지지 않을 것 같아요!" , "잘 모르겠어요!"} ,
             {"따뜻한 색" , "차가운 색"} ,
@@ -11,10 +11,10 @@ public class publicData {
 
     public int[][] boxItemImgList = {
             {R.drawable.box_people , R.drawable.box_ai} ,
-            {R.drawable.category_box_1 , R.drawable.category_box_2 , R.drawable.category_box_3} ,
+            /*{R.drawable.category_box_1 , R.drawable.category_box_2 , R.drawable.category_box_3} ,
             {R.drawable.category_box_1 , R.drawable.category_box_2} ,
             {R.drawable.category_box_1 , R.drawable.category_box_2} ,
-            {R.drawable.category_box_1 , R.drawable.category_box_2}
+            {R.drawable.category_box_1 , R.drawable.category_box_2}*/
     };
 
     public String[][][] cardItemStrList = {
@@ -39,17 +39,17 @@ public class publicData {
     };
 
     public int[][][] cardItemImgList = {
-            {{R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card} ,
+          /*  {{R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card} ,
                     {R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card , R.drawable.card}} ,
             {{R.drawable.img_job_1 , R.drawable.img_job_2 , R.drawable.img_job_3 , R.drawable.img_job_4 , R.drawable.img_job_5 , R.drawable.img_job_6 , R.drawable.img_job_7} ,
                     {R.drawable.img_job_8 , R.drawable.img_job_9 , R.drawable.img_job_10 , R.drawable.img_job_11} ,
-                    {R.drawable.img_job_12 , R.drawable.img_job_13}} ,
+                    {R.drawable.img_job_12 , R.drawable.img_job_13}} ,*/
             {{R.drawable.circle_1 , R.drawable.circle_2 , R.drawable.circle_3 , R.drawable.circle_4 , R.drawable.circle_5 , R.drawable.circle_6 , R.drawable.circle_7} ,
                     {R.drawable.circle_8 , R.drawable.circle_9 , R.drawable.circle_10 , R.drawable.circle_11 , R.drawable.circle_12}} ,
             {{R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1} ,
-                    {R.drawable.play_2 , R.drawable.play_2 , R.drawable.play_2 , R.drawable.play_2 , R.drawable.play_2}} ,
-            {{R.drawable.rect_1 , R.drawable.rect_1 , R.drawable.rect_1 , R.drawable.rect_1 , R.drawable.rect_1 , R.drawable.rect_1 , R.drawable.rect_1} ,
-                    {R.drawable.rect_2 , R.drawable.rect_2 , R.drawable.rect_2 , R.drawable.rect_2 , R.drawable.rect_2}}
+                    {R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1 , R.drawable.play_1}} ,
+            {{R.drawable.rect_1 , R.drawable.rect_2 , R.drawable.rect_3 , R.drawable.rect_4 , R.drawable.rect_5 , R.drawable.rect_6 , R.drawable.rect_7} ,
+                    {R.drawable.rect_8 , R.drawable.rect_9 , R.drawable.rect_10 , R.drawable.rect_11 , R.drawable.rect_12}}
     };
 
     public int[][] boxBackgroundImg = {
@@ -58,11 +58,11 @@ public class publicData {
     };
 
     public int[][] soundResList = {
-            {R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong} ,
+            {R.raw.right , R.raw.right , R.raw.right , R.raw.right , R.raw.right , R.raw.right , R.raw.right} ,
             {R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong}
     };
 
     public int getSoundResList(int idxc, int idxn){
         return soundResList[idxc][idxn];
-    }*/
+    }
 }

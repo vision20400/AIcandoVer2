@@ -8,9 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RadioGroup;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.sandburg.aicandover2.view.intro.Scene4_intro;
@@ -23,6 +26,10 @@ import com.sandburg.aicandover2.view.intro.Scene9_intro;
 public class topMenu extends Fragment {
 
     private int val;
+    Dialog dialog01; // 씬 7
+    Dialog dialog02; // 씬 5
+    Dialog dialog03; // 씬 5_3
+
 
     public topMenu(int val) {
         this.val = val;
@@ -42,8 +49,70 @@ public class topMenu extends Fragment {
 
         ImageButton home = (ImageButton) root.findViewById ( R.id.home );
         ImageButton menu = (ImageButton) root.findViewById ( R.id.menu );
+        ImageButton help = (ImageButton) root.findViewById ( R.id.top_help );
+
+        dialog01 = new Dialog(getActivity(),R.style.Theme_TransparentBackground);       // Dialog 초기화
+        dialog01.requestWindowFeature(Window.FEATURE_NO_TITLE); // 타이틀 제거
+        dialog01.setContentView(R.layout.scene7_dialog_help);             // xml 레이아웃 파일과 연결
+
+        dialog02 = new Dialog(getActivity(),R.style.Theme_TransparentBackground);       // Dialog 초기화
+        dialog02.requestWindowFeature(Window.FEATURE_NO_TITLE); // 타이틀 제거
+        dialog02.setContentView(R.layout.scene5_dialog0_help);             // xml 레이아웃 파일과 연결
+
+        dialog03 = new Dialog(getActivity(),R.style.Theme_TransparentBackground);       // Dialog 초기화
+        dialog03.requestWindowFeature(Window.FEATURE_NO_TITLE); // 타이틀 제거
+        dialog03.setContentView(R.layout.scene5_3_dialog_help);             // xml 레이아웃 파일과 연결
+        //다이얼로그 사이즈 full
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog01.getWindow().getAttributes());
+        lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp.height = WindowManager.LayoutParams.MATCH_PARENT;
+        Window window = dialog01.getWindow();
+        window.setAttributes(lp);
+
+        //다이얼로그 사이즈 full
+        WindowManager.LayoutParams lp1 = new WindowManager.LayoutParams();
+        lp1.copyFrom(dialog02.getWindow().getAttributes());
+        lp1.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp1.height = WindowManager.LayoutParams.MATCH_PARENT;
+        Window window1 = dialog02.getWindow();
+        window1.setAttributes(lp1);
+
+        //다이얼로그 사이즈 full
+        WindowManager.LayoutParams lp3 = new WindowManager.LayoutParams();
+        lp3.copyFrom(dialog02.getWindow().getAttributes());
+        lp3.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp3.height = WindowManager.LayoutParams.MATCH_PARENT;
+        Window window3 = dialog03.getWindow();
+        window3.setAttributes(lp3);
+
+        ImageView imageView19 = dialog01.findViewById(R.id.imageView19);
+        ImageButton dialog_cl = dialog01.findViewById(R.id.dialog_cl);
+        dialog_cl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog01.dismiss();
+            }
+        });
+
+        ImageButton dialog_cl1 = dialog02.findViewById(R.id.dialog_cl);
+        dialog_cl1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog02.dismiss();
+            }
+        });
+
+        ImageButton dialog_cl2 = dialog03.findViewById(R.id.dialog_cl);
+        dialog_cl2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog03.dismiss();
+            }
+        });
 
         ImageView menuNameImg = root.findViewById ( R.id.menuNameImg );
+
 
         switch (val) {
 
@@ -70,12 +139,26 @@ public class topMenu extends Fragment {
                 break;
             case 51 :
                 menuNameImg.setImageResource(R.drawable.menu_name_51);
+                help.setVisibility(View.VISIBLE);
+                help.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog02.show();
+                    }
+                });
                 break;
             case 52 :
                 menuNameImg.setImageResource(R.drawable.menu_name_52);
                 break;
             case 53 :
                 menuNameImg.setImageResource(R.drawable.menu_name_53);
+                help.setVisibility(View.VISIBLE);
+                help.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog03.show();
+                    }
+                });
                 break;
             case 60:
                 menuNameImg.setImageResource(R.drawable.menu_name_60);
@@ -92,15 +175,83 @@ public class topMenu extends Fragment {
             case 70:
                 menuNameImg.setImageResource(R.drawable.menu_name_70);
                 break;
+            case 71:
+                menuNameImg.setImageResource(R.drawable.menu_name_71);
+                help.setVisibility(View.VISIBLE);
+                imageView19.setImageResource(R.drawable.scene7_help_img);
+                help.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog01.show();
+                    }
+                });
+                break;
+            case 72:
+                menuNameImg.setImageResource(R.drawable.menu_name_72);
+                help.setVisibility(View.VISIBLE);
+                imageView19.setImageResource(R.drawable.scene7_help_img2);
+                help.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog01.show();
+                    }
+                });
+                break;
+            case 73:
+                menuNameImg.setImageResource(R.drawable.menu_name_73);
+                help.setVisibility(View.VISIBLE);
+                imageView19.setImageResource(R.drawable.scene7_help_img3);
+                help.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        dialog01.show();
+                    }
+                });
+                break;
+            case 80:
+                menuNameImg.setImageResource(R.drawable.menu_name_80);
+                break;
+            case 81:
+                menuNameImg.setImageResource(R.drawable.menu_name_81);
+                break;
+            case 82:
+                menuNameImg.setImageResource(R.drawable.menu_name_82);
+                break;
+            case 83:
+                menuNameImg.setImageResource(R.drawable.menu_name_83);
+                break;
+            case 84:
+                menuNameImg.setImageResource(R.drawable.menu_name_84);
+                break;
+            case 85:
+                menuNameImg.setImageResource(R.drawable.menu_name_85);
+                break;
+            case 86:
+                menuNameImg.setImageResource(R.drawable.menu_name_86);
+                break;
+            case 87:
+                menuNameImg.setImageResource(R.drawable.menu_name_87);
+                break;
             case 90:
                 menuNameImg.setImageResource(R.drawable.menu_name_90);
+                break;
+            case 94:
+                menuNameImg.setImageResource(R.drawable.menu_name_94);
                 break;
         }
 
         Dialog menu_dialog = new Dialog ( getActivity () , R.style.Theme_TransparentBackground );       // Dialog 초기화
         menu_dialog.requestWindowFeature ( Window.FEATURE_NO_TITLE ); // 타이틀 제거
         menu_dialog.setContentView ( R.layout.menu );             // xml 레이아웃 파일과 연결
-        menu_dialog.getWindow ().setGravity ( Gravity.RIGHT );
+        //menu_dialog.getWindow ().setGravity ( Gravity.RIGHT );
+
+        //다이얼로그 사이즈 full
+        WindowManager.LayoutParams lp2 = new WindowManager.LayoutParams();
+        lp2.copyFrom(menu_dialog.getWindow().getAttributes());
+        lp2.width = WindowManager.LayoutParams.MATCH_PARENT;
+        lp2.height = WindowManager.LayoutParams.MATCH_PARENT;
+        Window window2 = menu_dialog.getWindow();
+        window2.setAttributes(lp2);
 
         home.setOnClickListener ( new View.OnClickListener () {
             @Override
@@ -164,7 +315,10 @@ public class topMenu extends Fragment {
                 menu5.setOnClickListener ( new View.OnClickListener () {
                     @Override
                     public void onClick(View v) {
-                        startActivity ( new Intent ( getActivity () , Scene8_intro.class ) );
+                        int val = 80;
+                        Intent intent = new Intent(v.getContext(), Scene8_intro.class);
+                        intent.putExtra ( "val", val );
+                        startActivity(intent);
                         getActivity ().finish ();
 
                         menu_dialog.dismiss ();

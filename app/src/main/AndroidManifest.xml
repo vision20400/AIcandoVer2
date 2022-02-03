@@ -2,37 +2,51 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sandburg.aicandover2">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <queries>
+        <package android:name="com.google.android.googlequicksearchbox" />
+    </queries>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AIcandoVer2">
         <activity
+            android:name=".pdf"
+            android:exported="true" />
+        <activity
             android:name=".view.intro.Scene9_intro"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.intro.Scene8_intro"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.intro.Scene7_intro"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.intro.Scene6_intro"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.intro.Scene5_intro"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.intro.Scene4_intro"
             android:exported="true"
-            android:screenOrientation="sensorLandscape"/>
+            android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.scene4.Scene4_1"
             android:screenOrientation="sensorLandscape" />
@@ -65,6 +79,12 @@
             android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".view.scene6.Scene6_3"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".view.scene7.Scene7_0"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".view.scene9.Scene9_4"
             android:screenOrientation="sensorLandscape" />
         <activity
             android:name=".splash.Splash2Activity"

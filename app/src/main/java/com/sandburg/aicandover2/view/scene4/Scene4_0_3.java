@@ -1,5 +1,6 @@
 package com.sandburg.aicandover2.view.scene4;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,12 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.sandburg.aicandover2.R;
+import com.sandburg.aicandover2.pdf;
+
+import java.io.FileOutputStream;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 
 public class Scene4_0_3 extends Fragment {
     private int val;
@@ -37,6 +44,14 @@ public class Scene4_0_3 extends Fragment {
                 pdf1.setImageResource(R.drawable.pdf1);
                 pdf2.setImageResource(R.drawable.pdf2);
                 pdf3.setImageResource(R.drawable.pdf3);
+                pdf1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(getActivity(), pdf.class);
+                        intent.putExtra("key", "https://drive.google.com/file/d/1mgusYEb22wDtVNB6BPkz6CFs9hQu8uUD/view?usp=sharing");
+                        startActivity(intent);
+                    }
+                });
             break;
             case 42:
                 txt1.setText("- 학습 자료가 준비 중입니다.");
@@ -124,4 +139,5 @@ public class Scene4_0_3 extends Fragment {
 
         return v;
     }
+
 }

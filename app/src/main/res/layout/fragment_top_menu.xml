@@ -5,7 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.topMenu">
+    tools:context=".topMenu">
+
+    <ImageButton
+        android:id="@+id/top_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/help"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/menu"
+        app:layout_constraintEnd_toStartOf="@+id/menu"
+        app:layout_constraintTop_toTopOf="@+id/menu" />
 
     <ImageButton
         android:id="@+id/menu"

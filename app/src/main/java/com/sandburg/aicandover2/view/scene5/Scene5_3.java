@@ -43,8 +43,8 @@ public class Scene5_3 extends AppCompatActivity {
         RadioButton radioButton1 = (RadioButton) findViewById(R.id.radio4_1_1);
         RadioButton radioButton2 = (RadioButton) findViewById(R.id.radio4_1_2);
 
-        radioButton1.setButtonDrawable(R.drawable.radio_quiz);
-        radioButton2.setButtonDrawable(R.drawable.radio_ready);
+        radioButton1.setBackgroundResource(R.drawable.radio_paint);
+        radioButton2.setBackgroundResource(R.drawable.radio_ready);
 
 
         //라디오 버튼 3번 삭제

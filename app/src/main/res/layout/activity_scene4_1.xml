@@ -24,7 +24,6 @@
         android:id="@+id/scene4_frame"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/radio4_1Group"
         app:layout_constraintEnd_toStartOf="@+id/scene4_1_nbtn"
         app:layout_constraintStart_toEndOf="@+id/scene4_1_pbtn"
@@ -43,34 +42,37 @@
 
         <RadioButton
             android:id="@+id/radio4_1_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
-            android:button="@drawable/radio_youtube"
+            android:background="@drawable/radio_youtube"
+            android:button="@null"
             android:gravity="center"
-            android:scaleX="0.7"
-            android:scaleY="0.7"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             android:visibility="visible" />
 
         <RadioButton
             android:id="@+id/radio4_1_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
-            android:button="@drawable/radio_quiz"
+            android:background="@drawable/radio_quiz"
+            android:button="@null"
             android:gravity="center"
-            android:scaleX="0.7"
-            android:scaleY="0.7" />
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
 
         <RadioButton
             android:id="@+id/radio4_1_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
             android:layout_gravity="center"
-            android:button="@drawable/radio_plus"
+            android:background="@drawable/radio_plus"
+            android:button="@null"
             android:gravity="center"
-            android:scaleX="0.7"
-            android:scaleY="0.7" />
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
     </RadioGroup>
 
     <Button
