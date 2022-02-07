@@ -22,7 +22,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="5"
             android:orientation="vertical">
 
             <LinearLayout
@@ -85,7 +85,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_weight="4"
             android:background="@drawable/scene7_img1"
             android:gravity="right|center_vertical"
             android:orientation="vertical">
@@ -103,6 +103,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center|center_vertical"
             android:orientation="vertical">
 
@@ -120,7 +121,16 @@
                 android:id="@+id/scene7_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 app:srcCompat="@drawable/scene7_result1" />
+
+            <ImageButton
+                android:id="@+id/scene7_reset_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/reset_btn" />
         </LinearLayout>
 
     </LinearLayout>

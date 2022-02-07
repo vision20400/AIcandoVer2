@@ -1,5 +1,6 @@
 package com.sandburg.aicandover2.view.scene4;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,11 +9,18 @@ import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
 
 public class Scene4_2 extends AppCompatActivity { //#씬4_1 AI란
     private com.sandburg.aicandover2.topMenu topMenu;
+
+    @Override
+    public void onBackPressed() {
+        startActivity ( new Intent( this , MainActivity.class ) );
+        finish ();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

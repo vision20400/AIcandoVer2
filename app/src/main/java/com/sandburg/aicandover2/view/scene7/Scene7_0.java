@@ -10,6 +10,7 @@ import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
 import com.sandburg.aicandover2.view.scene4.Scene4_0_3;
@@ -17,6 +18,12 @@ import com.sandburg.aicandover2.view.scene6.Scene6_3_1;
 
 public class Scene7_0 extends AppCompatActivity {
     private com.sandburg.aicandover2.topMenu topMenu;
+
+    @Override
+    public void onBackPressed() {
+        startActivity ( new Intent ( this , MainActivity.class ) );
+        finish ();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +34,9 @@ public class Scene7_0 extends AppCompatActivity {
         int key = secondIntent.getIntExtra("key",1);
 
         switch (key){
+            case 0:
+                topMenu = new topMenu(70);
+                break;
             case 1:
                 topMenu = new topMenu(71);
                 break;
@@ -40,7 +50,12 @@ public class Scene7_0 extends AppCompatActivity {
 
         //fragment
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene7_0_0(key)).commit();
+        if(key == 0){
+            getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene7_0_1()).commit();
+
+        }else {
+            getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene7_0_0(key)).commit();
+        }
 
         fragmentTransaction.add(R.id.topMenuFrame, topMenu);
         fragmentTransaction.commit();

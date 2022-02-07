@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 
+import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
 import com.sandburg.aicandover2.view.scene4.Scene4_0_1;
@@ -19,6 +20,11 @@ public class Scene8_intro extends AppCompatActivity {
     private com.sandburg.aicandover2.topMenu topMenu;
     private int val;
 
+    @Override
+    public void onBackPressed() {
+        startActivity ( new Intent ( this , MainActivity.class ) );
+        finish ();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

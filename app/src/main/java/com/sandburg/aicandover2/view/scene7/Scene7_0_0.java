@@ -56,6 +56,7 @@ public class Scene7_0_0 extends Fragment {
     ImageButton item_11;
     ImageButton item_12;
     ImageButton[] items;
+    ImageButton scene7_reset_btn;
     int[] items_id;
     ImageButton scene7_train_btn;
     String Tag = "발견하기";
@@ -93,6 +94,7 @@ public class Scene7_0_0 extends Fragment {
         item_11 = (ImageButton) v.findViewById(R.id.item_11);
         item_12 = (ImageButton) v.findViewById(R.id.item_12);
         scene7_train_btn = (ImageButton) v.findViewById(R.id.scene7_train_btn);
+        scene7_reset_btn = (ImageButton) v.findViewById(R.id.scene7_reset_btn);
 
         items = new ImageButton[]{item_1,item_2,item_3,item_4,item_5,item_6,item_7,item_8,item_9,item_10,item_11,item_12};
         items_id = new int[]{R.id.item_1,R.id.item_2,R.id.item_3,R.id.item_4,R.id.item_5,R.id.item_6,R.id.item_7,
@@ -236,6 +238,12 @@ public class Scene7_0_0 extends Fragment {
         v.findViewById(R.id.scene7_box2).setOnDragListener(
                 new DragListener());
 
+        scene7_reset_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getParentFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene7_0_0(key)).commit();
+            }
+        });
 
         scene7_train_btn.setOnClickListener(new View.OnClickListener() {
             @Override

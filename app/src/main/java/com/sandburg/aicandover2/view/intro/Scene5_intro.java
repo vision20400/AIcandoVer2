@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
 import com.sandburg.aicandover2.view.scene4.Scene4_1;
@@ -20,6 +21,12 @@ import com.sandburg.aicandover2.view.scene5.Scene5_3;
 
 public class Scene5_intro extends AppCompatActivity {
     private com.sandburg.aicandover2.topMenu topMenu;
+
+    @Override
+    public void onBackPressed() {
+        startActivity ( new Intent ( this , MainActivity.class ) );
+        finish ();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
