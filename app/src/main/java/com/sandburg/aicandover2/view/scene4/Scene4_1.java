@@ -12,13 +12,14 @@ import androidx.fragment.app.FragmentTransaction;
 import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
+import com.sandburg.aicandover2.view.intro.Scene4_intro;
 
 public class Scene4_1 extends AppCompatActivity { //#씬4_1 AI란
     private com.sandburg.aicandover2.topMenu topMenu;
 
     @Override
     public void onBackPressed() {
-        startActivity ( new Intent( this , MainActivity.class ) );
+        startActivity ( new Intent( this , Scene4_intro.class ) );
         finish ();
     }
 

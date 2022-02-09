@@ -13,6 +13,8 @@ import androidx.fragment.app.FragmentTransaction;
 import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
+import com.sandburg.aicandover2.view.intro.Scene4_intro;
+import com.sandburg.aicandover2.view.intro.Scene5_intro;
 import com.sandburg.aicandover2.view.scene4.Scene4_0_1;
 import com.sandburg.aicandover2.view.scene4.Scene4_0_3;
 import com.sandburg.aicandover2.view.scene4.Scene4_1_2;
@@ -22,7 +24,7 @@ public class Scene5_1 extends AppCompatActivity { //#씬4_1 AI란
 
     @Override
     public void onBackPressed() {
-        startActivity ( new Intent( this , MainActivity.class ) );
+        startActivity ( new Intent( this , Scene5_intro.class ) );
         finish ();
     }
 
@@ -53,7 +55,7 @@ public class Scene5_1 extends AppCompatActivity { //#씬4_1 AI란
         RadioButton radioButton1 = (RadioButton) findViewById(R.id.radio4_1_1);
         RadioButton radioButton2 = (RadioButton) findViewById(R.id.radio4_1_2);
 
-        radioButton1.setBackgroundResource(R.drawable.radio_quiz);
+        radioButton1.setBackgroundResource(R.drawable.radio_active);
         radioButton2.setBackgroundResource(R.drawable.radio_ready);
 
 

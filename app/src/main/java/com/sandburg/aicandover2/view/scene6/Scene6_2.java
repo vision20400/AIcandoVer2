@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.sandburg.aicandover2.MainActivity;
 import com.sandburg.aicandover2.R;
 import com.sandburg.aicandover2.topMenu;
+import com.sandburg.aicandover2.view.intro.Scene6_intro;
 import com.sandburg.aicandover2.view.scene4.Scene4_0_1;
 import com.sandburg.aicandover2.view.scene4.Scene4_0_3;
 
@@ -21,7 +22,7 @@ public class Scene6_2 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity ( new Intent( this , MainActivity.class ) );
+        startActivity ( new Intent( this , Scene6_intro.class ) );
         finish ();
     }
 

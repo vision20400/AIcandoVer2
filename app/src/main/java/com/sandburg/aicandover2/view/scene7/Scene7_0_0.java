@@ -38,6 +38,9 @@ public class Scene7_0_0 extends Fragment {
     Dialog dialog02; // 커스텀 다이얼로그
     Dialog dialog03; // 커스텀 다이얼로그
     Dialog dialog04; // 커스텀 다이얼로그
+    MediaPlayer pick_sound; //효과음
+    MediaPlayer right_sound;
+    MediaPlayer wrong_sound;
 
 
     TextView scene7_text1;
@@ -95,6 +98,10 @@ public class Scene7_0_0 extends Fragment {
         item_12 = (ImageButton) v.findViewById(R.id.item_12);
         scene7_train_btn = (ImageButton) v.findViewById(R.id.scene7_train_btn);
         scene7_reset_btn = (ImageButton) v.findViewById(R.id.scene7_reset_btn);
+
+        pick_sound = MediaPlayer.create(getContext(), R.raw.pick_sound);
+        right_sound = MediaPlayer.create(getContext(), R.raw.right);
+        wrong_sound = MediaPlayer.create(getContext(), R.raw.wrong);
 
         items = new ImageButton[]{item_1,item_2,item_3,item_4,item_5,item_6,item_7,item_8,item_9,item_10,item_11,item_12};
         items_id = new int[]{R.id.item_1,R.id.item_2,R.id.item_3,R.id.item_4,R.id.item_5,R.id.item_6,R.id.item_7,
@@ -263,21 +270,26 @@ public class Scene7_0_0 extends Fragment {
 
                 if(A_data.size()+B_data.size() == 0){
                     Log.d(Tag, "데이터가 없습니다");
+                    wrong_sound.start();
                     scene7_result.setImageResource(R.drawable.scene7_result1);
                     dialog01.show();
                 }else if(A_data.size()+B_data.size() < 6 ){
                     Log.d(Tag, "데이터가 너무 적습니다");
+                    wrong_sound.start();
                     scene7_result.setImageResource(R.drawable.scene7_result2);
                     dialog01.show();
                 }else if(abs(A_data.size()-B_data.size())>2){
                     Log.d(Tag, "데이터간 균형이 안맞아요");
+                    wrong_sound.start();
                     scene7_result.setImageResource(R.drawable.scene7_result2);
                     dialog03.show();
                 }else if( bad_data.size()>0){
                     Log.d(Tag, "잘못된 레이블링이 있어요");
+                    wrong_sound.start();
                     scene7_result.setImageResource(R.drawable.scene7_result2);
                     dialog02.show();
                 }else {
+                    right_sound.start();
                     scene7_result.setImageResource(R.drawable.scene7_result3);
                     dialog04.show();
                 }
@@ -318,6 +330,7 @@ public class Scene7_0_0 extends Fragment {
                 // 이미지를 드래그해서 드랍시켰을때
                 case DragEvent.ACTION_DROP:
                     Log.d("DragClickListener", "ACTION_DROP");
+                    pick_sound.start();
 
                     if (v == getActivity().findViewById(R.id.scene7_box1)) {
                         View view = (View) event.getLocalState();
