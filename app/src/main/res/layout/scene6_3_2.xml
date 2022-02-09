@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result_linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/border8_layout"
@@ -158,7 +159,6 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -263,6 +263,22 @@
         android:paddingTop="5dp"
         android:paddingRight="50dp"
         android:paddingBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/save_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/save_btn" />
+
+        <ImageButton
+            android:id="@+id/share_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/share_btn" />
 
         <ImageButton
             android:id="@+id/scene6_3_2_re"
