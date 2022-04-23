@@ -45,6 +45,13 @@ public class Scene8_1 extends Fragment {
 
         switch (val) {
             case 81:
+                youTubePlayerView.initialize(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        youTubePlayer.loadVideo("OvgIIvwKspo", 0);
+                    }
+                }, false);
+
                 scene8_text.setText("인공지능과 함께라면 그림그리기, 자신 있어요!");
                 icon.setImageResource(R.drawable.web);
                 btn_app_web.setImageResource(R.drawable.btn_web);
@@ -89,6 +96,13 @@ public class Scene8_1 extends Fragment {
                 });
                 break;
             case 84:
+                youTubePlayerView.initialize(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        youTubePlayer.loadVideo("7UtV0KQZ5lQ", 0);
+                    }
+                }, false);
+
                 scene8_text.setText("어렵고 복잡한 수학문제, 인공지능과 함께 공부해볼까요?");
                 icon.setImageResource(R.drawable.app);
                 btn_app_web.setImageResource(R.drawable.btn_app);
@@ -101,6 +115,13 @@ public class Scene8_1 extends Fragment {
                 });
                 break;
             case 85:
+                youTubePlayerView.initialize(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        youTubePlayer.loadVideo("CUO8dnaYzwU", 0);
+                    }
+                }, false);
+
                 scene8_text.setText("인공지능과 함께 하는 그림 퀴즈를 통해 데이터와 머신러닝에 대해 이해할 수 있어요.");
                 icon.setImageResource(R.drawable.web);
                 btn_app_web.setImageResource(R.drawable.btn_web);
@@ -113,6 +134,13 @@ public class Scene8_1 extends Fragment {
                 });
                 break;
             case 86:
+                youTubePlayerView.initialize(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        youTubePlayer.loadVideo("L1nm6oFx3No", 0);
+                    }
+                }, false);
+
                 scene8_text.setText("인공지능을 활용하면 우리 교실을 세계 유명 미술관으로 만들 수 있어요.");
                 icon.setImageResource(R.drawable.app);
                 btn_app_web.setImageResource(R.drawable.btn_app);
@@ -125,6 +153,13 @@ public class Scene8_1 extends Fragment {
                 });
                 break;
             case 87:
+                youTubePlayerView.initialize(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        youTubePlayer.loadVideo("JZsXMUTkfIg", 0);
+                    }
+                }, false);
+
                 scene8_text.setText("누구나 쉽게 머신러닝의 과정을 이해하고 인공지능 모델을 직접 만들 수 있어요.");
                 icon.setImageResource(R.drawable.web);
                 btn_app_web.setImageResource(R.drawable.btn_web);
