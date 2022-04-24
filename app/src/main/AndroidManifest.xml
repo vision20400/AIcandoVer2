@@ -20,6 +20,15 @@
         android:roundIcon="@mipmap/icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AIcandoVer2">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.sandburg.aicandover2"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
         <activity
             android:name=".pdf"
             android:exported="true" />

@@ -24,6 +24,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.core.content.FileProvider;
 import androidx.fragment.app.Fragment;
 
 import com.sandburg.aicandover2.R;
@@ -199,15 +200,17 @@ public class Scene5_3_1 extends Fragment {
         });
         drawlinear = v.findViewById(R.id.draw_linear);
 
-        //capture
-        SimpleDateFormat sdf = new SimpleDateFormat( "yyyyMMddHHmmss"); //년,월,일,시간 포멧 설정
-        Date time = new Date(); //파일명 중복 방지를 위해 사용될 현재시간
-        String current_time = sdf.format(time); //String형 변수에 저장
+
 
         v.findViewById(R.id.save_btn).setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
+                //capture
+                SimpleDateFormat sdf = new SimpleDateFormat( "yyyyMMddHHmmss"); //년,월,일,시간 포멧 설정
+                Date time = new Date(); //파일명 중복 방지를 위해 사용될 현재시간
+                String current_time = sdf.format(time); //String형 변수에 저장
+
                 Request_Capture(drawlinear,current_time + "_capture"); //지정한 Layout 영역 사진첩 저장 요청
             }
         });
@@ -216,6 +219,11 @@ public class Scene5_3_1 extends Fragment {
         v.findViewById(R.id.share_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //capture
+                SimpleDateFormat sdf = new SimpleDateFormat( "yyyyMMddHHmmss"); //년,월,일,시간 포멧 설정
+                Date time = new Date(); //파일명 중복 방지를 위해 사용될 현재시간
+                String current_time = sdf.format(time); //String형 변수에 저장
+
                 Request_Share(drawlinear,current_time + "_capture"); //지정한 Layout 영역 사진첩 저장 요청
             }
         });
@@ -263,7 +271,9 @@ public class Scene5_3_1 extends Fragment {
         }
 
         /* 캡쳐 파일 저장 */
-        view.buildDrawingCache(); //캐시 비트 맵 만들기
+//        view.buildDrawingCache(); //캐시 비트 맵 만들기
+        view.setDrawingCacheEnabled(true);
+
         Bitmap bitmap = view.getDrawingCache();
         FileOutputStream fos;
 
@@ -297,6 +307,8 @@ public class Scene5_3_1 extends Fragment {
             ms.mediaScanning(Str_Path + title + ".jpg",0);
             Toast myToast = Toast.makeText(this.getContext().getApplicationContext(),"저장되었습니다.", Toast.LENGTH_SHORT);
             myToast.show();
+            view.setDrawingCacheEnabled(false);
+
         }catch (Exception e) {
             e.printStackTrace();
             System.out.println("::::ERROR:::: "+e);
@@ -311,7 +323,9 @@ public class Scene5_3_1 extends Fragment {
         }
 
         /* 캡쳐 파일 저장 */
-        view.buildDrawingCache(); //캐시 비트 맵 만들기
+//        view.buildDrawingCache(); //캐시 비트 맵 만들기
+        view.setDrawingCacheEnabled(true);
+
         Bitmap bitmap = view.getDrawingCache();
         FileOutputStream fos;
 
@@ -326,6 +340,7 @@ public class Scene5_3_1 extends Fragment {
 
         /* 파일 저장 */
         String Str_Path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/DCIM/Camera/"; //저장 경로 (String Type 변수)
+        String adress = Str_Path+title+".jpg";
 
         try{
             fos = new FileOutputStream(Str_Path+title+".jpg"); // 경로 + 제목 + .jpg로 FileOutputStream Setting
@@ -340,7 +355,15 @@ public class Scene5_3_1 extends Fragment {
 
 
         try { // TODO : 미디어 스캔
-            ms.mediaScanning(Str_Path + title + ".jpg",1);
+           // ms.mediaScanning(Str_Path + title + ".jpg",1);
+            Uri uri = FileProvider.getUriForFile(getContext(), "com.sandburg.aicandover2", new File(adress));
+            Intent shareintent = new Intent(Intent.ACTION_SEND);
+
+            shareintent.putExtra(Intent.EXTRA_STREAM,uri);
+            shareintent.setType("image/*");
+            startActivity(Intent.createChooser(shareintent,"공유"));
+            view.setDrawingCacheEnabled(false);
+
 
         }catch (Exception e) {
             e.printStackTrace();
