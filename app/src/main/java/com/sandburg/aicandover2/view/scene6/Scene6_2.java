@@ -33,7 +33,7 @@ public class Scene6_2 extends AppCompatActivity {
 
         //fragment
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("RBhtc3wN0Qs")).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("iIjv92PyDw8")).commit();
 
 
         //top메뉴
@@ -61,7 +61,7 @@ public class Scene6_2 extends AppCompatActivity {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId == R.id.radio4_1_1){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("RBhtc3wN0Qs")).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("iIjv92PyDw8")).commit();
                     changeButton(scene4_1_pbtn,scene4_1_nbtn,1,group);
                 }
                 else if(checkedId == R.id.radio4_1_2){
@@ -106,7 +106,7 @@ public class Scene6_2 extends AppCompatActivity {
                 btn1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("RBhtc3wN0Qs")).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("iIjv92PyDw8")).commit();
                         group.check(R.id.radio4_1_1);
                     }
                 });

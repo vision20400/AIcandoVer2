@@ -15,7 +15,7 @@ import com.sandburg.aicandover2.R;
 
 public class Scene7_0_1 extends Fragment {
 
-    private String VideoID = "Vimf0CYl0sY"; //유튜브 영상 ID
+    private String VideoID = "Dl1KXRACLq4"; //유튜브 영상 ID
     YouTubePlayerView youTubePlayerView;
     public Scene7_0_1() {}
 

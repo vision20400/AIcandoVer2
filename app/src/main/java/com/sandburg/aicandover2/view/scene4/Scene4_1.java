@@ -30,7 +30,7 @@ public class Scene4_1 extends AppCompatActivity { //#씬4_1 AI란
 
         //fragment
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("CdDm6zwEn1Q")).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("i2Z8wAjAY_k")).commit();
 
 
         //top메뉴
@@ -55,7 +55,7 @@ public class Scene4_1 extends AppCompatActivity { //#씬4_1 AI란
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if(checkedId == R.id.radio4_1_1){
-                    getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("CdDm6zwEn1Q")).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("i2Z8wAjAY_k")).commit();
                     changeButton(scene4_1_pbtn,scene4_1_nbtn,1,group);
                 }
                 else if(checkedId == R.id.radio4_1_2){
@@ -100,7 +100,7 @@ public class Scene4_1 extends AppCompatActivity { //#씬4_1 AI란
                 btn1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("CdDm6zwEn1Q")).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.scene4_frame, new Scene4_0_1("i2Z8wAjAY_k")).commit();
                         group.check(R.id.radio4_1_1);
                     }
                 });

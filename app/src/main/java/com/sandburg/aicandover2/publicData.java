@@ -58,8 +58,8 @@ public class publicData {
     };
 
     public int[][] soundResList = {
-            {R.raw.right , R.raw.right , R.raw.right , R.raw.right , R.raw.right , R.raw.right , R.raw.right} ,
-            {R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong , R.raw.wrong}
+            {R.raw.right1 , R.raw.right2 , R.raw.right3 , R.raw.right4 , R.raw.right5 , R.raw.right6 , R.raw.right7} ,
+            {R.raw.wrong1 , R.raw.wrong2 , R.raw.wrong3 , R.raw.wrong4 , R.raw.wrong5}
     };
 
     public int getSoundResList(int idxc, int idxn){

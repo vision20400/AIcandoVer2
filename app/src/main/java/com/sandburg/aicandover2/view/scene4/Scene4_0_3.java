@@ -34,13 +34,16 @@ public class Scene4_0_3 extends Fragment {
         ImageButton pdf1 = (ImageButton) v.findViewById ( R.id.s5_btn2);
         ImageButton pdf2 = (ImageButton) v.findViewById ( R.id.s5_btn1);
         ImageButton pdf3 = (ImageButton) v.findViewById ( R.id.s5_btn3);
+        pdf1.setVisibility(View.INVISIBLE);
+        pdf2.setVisibility(View.INVISIBLE);
+        pdf3.setVisibility(View.INVISIBLE);
 
 
         switch (val) {
             case 41:
-                txt1.setText("- 우리 생활 속 인공지능을 찾아볼까요?");
-                txt2.setText("- 강한 인공지능은 개발될 수 있을까요?");
-                txt3.setText("- 빅데이터와 사물 인터넷이란 무엇일까요?");
+                txt1.setText("- 학습 자료가 준비 중입니다.");
+                txt2.setText("- 학습 자료가 준비 중입니다.");
+                txt3.setText("- 학습 자료가 준비 중입니다.");
                 pdf1.setImageResource(R.drawable.pdf1);
                 pdf2.setImageResource(R.drawable.pdf2);
                 pdf3.setImageResource(R.drawable.pdf3);
@@ -87,9 +90,9 @@ public class Scene4_0_3 extends Fragment {
                 break;
 
             case 51:
-                txt1.setText("- 인공지능 시대는 어떤 모습일까요?");
-                txt2.setText("- 인공지능이 정말 사람의 역할을 대체하게 될까요?");
-                txt3.setText("- 인공지능 시대, 어떤 직업이 생겨날까요?");
+                txt1.setText("- 학습 자료가 준비 중입니다.");
+                txt2.setText("- 학습 자료가 준비 중입니다.");
+                txt3.setText("- 학습 자료가 준비 중입니다.");
                 pdf1.setImageResource(R.drawable.pdf7);
                 pdf2.setImageResource(R.drawable.pdf8);
                 pdf3.setImageResource(R.drawable.pdf9);
@@ -111,9 +114,9 @@ public class Scene4_0_3 extends Fragment {
                 pdf3.setImageResource(R.drawable.pdf9);
                 break;
             case 61:
-                txt1.setText("- 나는 인공지능을 어떻게 생각하고 있을까요?");
-                txt2.setText("- 인공지능 윤리기준에는 어떤 것들이 있을까요?");
-                txt3.setText("- 나만의 인공지능 윤리기준을 만들어 볼까요?");
+                txt1.setText("- 학습 자료가 준비 중입니다.");
+                txt2.setText("- 학습 자료가 준비 중입니다.");
+                txt3.setText("- 학습 자료가 준비 중입니다.");
                 pdf1.setImageResource(R.drawable.pdf4);
                 pdf2.setImageResource(R.drawable.pdf5);
                 pdf3.setImageResource(R.drawable.pdf6);
