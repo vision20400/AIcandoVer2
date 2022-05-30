@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -37,7 +38,27 @@ public class Scene9_intro extends AppCompatActivity {
         fragmentTransaction.add ( R.id.topMenuFrame , topMenu );
         fragmentTransaction.commit ();
 
+        ImageButton scene9_1 = (ImageButton)findViewById(R.id.s9_btn1);
+        ImageButton scene9_2 = (ImageButton)findViewById(R.id.s9_btn2);
         ImageButton scene9_4 = (ImageButton)findViewById(R.id.s9_btn4);
+
+        scene9_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(android.content.Intent.ACTION_VIEW);
+                i.setData(Uri.parse("https://play.google.com/store/apps/details?id=org.JTayler.lite.examples.classification"));
+                startActivity(i);
+            }
+        });
+
+        scene9_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(android.content.Intent.ACTION_VIEW);
+                i.setData(Uri.parse("https://play.google.com/store/apps/details?id=org.tensorflow.lite.examples.soundclassifier"));
+                startActivity(i);
+            }
+        });
 
         scene9_4.setOnClickListener(new View.OnClickListener() {
             @Override
